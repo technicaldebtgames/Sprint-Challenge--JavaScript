@@ -23,20 +23,20 @@ class CuboidMaker {
   
 
   
-  cuboid = new CuboidMaker(4, 5, 5);
-  
-  // Test your volume and surfaceArea methods by uncommenting the logs below:
-   console.log("Cuboid vol: " + cuboid.volume()); // 100
-   console.log("Cuboid sur: " + cuboid.surfaceArea()); // 130
+cuboid = new CuboidMaker(4, 5, 5);
+
+// Test your volume and surfaceArea methods by uncommenting the logs below:
+console.log("Cuboid vol: " + cuboid.volume()); // 100
+console.log("Cuboid sur: " + cuboid.surfaceArea()); // 130
 
 
 class CubeMaker extends CuboidMaker {
-    constructor(args) {
-        super(args.length, args.length, args.length);
+    constructor(length) {
+        super(length, length, length);
     }
 }
 
-cube = new CubeMaker({length: 2});
+cube = new CubeMaker(2);
 
 console.log("Cube vol: " + cube.volume()); // 8
 console.log("Cube sur: " + cube.surfaceArea()); // 24
