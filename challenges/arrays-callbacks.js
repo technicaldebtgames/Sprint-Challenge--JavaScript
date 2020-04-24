@@ -101,5 +101,7 @@ function greeting(first, last) {
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
+Did that during MVP actually.
+
 */
 
