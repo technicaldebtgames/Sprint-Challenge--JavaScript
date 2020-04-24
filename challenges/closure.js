@@ -18,7 +18,20 @@ myFunction();
 
 // Explanation: 
 
+/*
+nestedFunction has access to the variable internal's scope. Access can look up through scope levels, but not down.
+*/
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(num) {
+  let count = 0;
+  for (let i = 1; i <= num; i++){
+    count += i;
+  }
+  return count;
+}
+
+console.log(summation(4));
