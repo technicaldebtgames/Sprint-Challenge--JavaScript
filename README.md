@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+forEach executes a function once for each array element, and executes it on that array.
+
+map creates a new array, from a given array, with the new array being the result of executing a function on each element of the given array.
+
 2. Explain the difference between a callback and a higher order function.
+
+HoF: a "parent" function that takes another function as an argument.
+
+cb: a function passed to a HoF as an argument.
 
 3. What is closure?
 
+A closure gives access to an outer functions scope/variables from an inner function. This persists even after the parent function is "closed".
+
 4. Describe the four rules of the 'this' keyword.
 
+When used in Global scope, "this" refers to the window or console object.
+
+Whenever a Function is called in the form of Object.Function (aka, a Method), the Object before the period is the "this" of Function/Method.
+
+When inside of a constructor function, "this" refers to the specific object that is being created by the constructor function.
+
+When using .call or .apply, "this" is passed as a parameter to those methods.
+
 5. Why do we need super() in an extended class?
+
+super refers to an object's parent and is used to initialize variables and methods when extending.
 
 ### Task 1 - Project Set up
 
